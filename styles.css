@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Brunswick Grotesque';
+    src: url('/assets/BrunswickGrotesque-Regular.woff2') format('woff2'),
+        url('/assets/BrunswickGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0vw); /* Start from right */
+    }
+    to {
+        transform: translateX(-10%); /* Move to left */
+    }
+}
+
+
+body {
+    background-color: #6A3623;
+    color: #000000;
+    font-family: 'Brunswick Grotesque';
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 5rem;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.heading {
+    border-bottom: 1px solid black;
+     h1 {
+        padding: 2vh 0;
+     }
+}
+
+.choice-names {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .choice-name {
+        text-align: center;
+        border-bottom: 1px solid black;
+        max-width: 33.3vw;
+    }
+
+    .choice-name:not(:last-child) {
+        border-right: 1px solid black;
+    }
+}
+
+.choice-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .choice-photo {
+        text-align: center;
+        border-bottom: 1px solid black;
+        max-width: 33.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+
+        img {
+            cursor: pointer;
+        }
+
+        img.rock {
+            max-width: 15vw;
+        }
+
+        img.paper {
+            max-width: 20vw;
+        }
+
+        img.scissors {
+            max-width: 20vw;
+        }
+    }
+
+    .choice-photo:not(:last-child) {
+        border-right: 1px solid black;
+    }
+}
+
+.instructions {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+    border-bottom: 1px solid black;
+
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.winner {
+    background-color: #D7BBA7;
+    overflow: hidden; 
+    padding: 2vh 0;
+
+
+    .marquee-text {
+            display: inline-block;
+            font-size: 2.2rem;
+            animation: scroll 60s linear infinite;
+            white-space: nowrap;
+       }
+    
+}
