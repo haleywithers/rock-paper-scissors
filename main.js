@@ -21,15 +21,15 @@ function getComputerChoice() {
         humanChoice = humanChoice.toLowerCase();
 
         if (humanChoice === computerChoice) {
-            winnerMessage.textContent = "It's a Tie!";
+            winnerMessage.textContent = "It's a Tie! It's a Tie! It's a Tie! ".repeat(100);
         } else if (humanChoice === "rock" && computerChoice === "scissors") {
-            winnerMessage.textContent = "You Win!"; 
+            winnerMessage.textContent = "You Win! You Win! You Win! ".repeat(100); 
         } else if (humanChoice === "paper" && computerChoice === "rock") {
-            winnerMessage.textContent = "You Win!"; 
+            winnerMessage.textContent = "You Win! You Win! You Win! ".repeat(100); 
         } else if (humanChoice === "scissors" && computerChoice === "paper") {
-            winnerMessage.textContent = "You Win!"; 
+            winnerMessage.textContent = "You Win! You Win! You Win! ".repeat(100); 
         } else {
-            winnerMessage.textContent = "You Lose!";
+            winnerMessage.textContent = "You Lose! You Lose! You Lose! ".repeat(100);
         }
     }
 

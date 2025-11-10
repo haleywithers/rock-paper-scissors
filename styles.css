@@ -7,6 +7,15 @@
     font-display: swap;
 }
 
+@keyframes scroll {
+    from {
+        transform: translateX(0vw); /* Start from right */
+    }
+    to {
+        transform: translateX(-10%); /* Move to left */
+    }
+}
+
 
 body {
     background-color: #6A3623;
@@ -67,6 +76,10 @@ h3 {
         align-items: center;
         min-height: 50vh;
 
+        img {
+            pointer-events: auto;
+        }
+
         img.rock {
             max-width: 15vw;
         }
@@ -102,8 +115,15 @@ h3 {
 
 .winner {
     background-color: #D7BBA7;
+    overflow: hidden; 
+    padding: 2vh 0;
+
+
+    .marquee-text {
+            display: inline-block;
+            font-size: 2.2rem;
+            animation: scroll 60s linear infinite;
+            white-space: nowrap;
+       }
     
-    h3 {
-        padding: 2vh 0;
-    }
 }
