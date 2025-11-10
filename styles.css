@@ -77,7 +77,7 @@ h3 {
         min-height: 50vh;
 
         img {
-            pointer-events: auto;
+            cursor: pointer;
         }
 
         img.rock {

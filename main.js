@@ -1,5 +1,7 @@
 let winnerMessage = document.querySelector(".marquee-text");
 
+winnerMessage.textContent = "Let's Play! Let's Play! Let's Play! ".repeat(100);
+
 function getComputerChoice() {
     let randomNumber = Math.random();
 
