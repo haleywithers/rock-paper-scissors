@@ -13,7 +13,7 @@ This is a simple yet engaging implementation of the classic Rock Paper Scissors 
 - Animated marquee display showing round results
 - Clean, grid-based layout with custom styling
 - Instant feedback after each round
-- Responsive design with custom typography
+- Desktop only design with custom typography (for now)
 
 ## Technologies Used
 
